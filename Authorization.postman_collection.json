@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "ee199155-90a3-4746-abda-89962da60738",
+		"name": "Authorization",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46575003",
+		"_collection_link": "https://hamzanaeem-452726.postman.co/workspace/7d05cbb4-a83f-4ad0-8a50-65a063098bf5/collection/46575003-ee199155-90a3-4746-abda-89962da60738?action=share&source=collection_link&creator=46575003"
+	},
+	"item": [
+		{
+			"name": "register-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Hamza",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "hamza121@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "hamza121@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload-data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/HC/Downloads/NodeJS Task Task.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/files/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"files",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload-data-summary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/HC/Downloads/NodeJS Task Task.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/files/upload-summary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"files",
+						"upload-summary"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
